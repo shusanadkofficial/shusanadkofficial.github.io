@@ -1,0 +1,83 @@
+/* CSS for Log In and Sign up Page */
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gold-color: #f7ce3e;
+  --black-color: #161918;
+  --white-color: #ffff;
+  --grey-color: rgb(224, 223, 223);
+  font-size: 16px;
+}
+
+.grid-container {
+  display: grid;
+  place-items: center;
+}
+
+.form-banner {
+  font-weight: 300;
+  position: relative;
+  max-width: 700px;
+  top: 20%;
+  text-align: center;
+  background-color: black;
+  padding: 50px;
+  color: var(--gold-color);
+}
+
+.reg-title {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    font-weight: 900;
+}
+
+.forgot {
+  color: var(--gold-color);
+  font-size: 1.2rem;
+}
+
+.forgot:hover {
+  color: var(--white-color);
+}
+
+.social-media ul {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media ul li {
+  padding: 2px;
+  margin: 0 4px;
+  font-size: 1.8rem;
+}
+
+.social-media ul li i.bx {
+    color: var(--gold-color);
+    border: 1px solid var(--gold-color);
+    border-radius: 50%;
+    font-size: 1.8rem;
+}
+
+.social-media ul li i.bx:hover {
+    color: var(--white-color);
+    transform: rotate(36deg) scale(1.4);
+    border-color: var(--white-color);
+}
+
+input {
+  border: 3px solid var(--gold-color);
+  outline: none;
+  border-radius: 20px;
+  padding: 12px;
+  background-color: var(--black-color);
+  width: 350px;
+  font-size: 1.2rem;
+  color: var(--gold-color);
+  margin: 10px;
+}
