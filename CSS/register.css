@@ -24,7 +24,7 @@
   font-weight: 300;
   position: relative;
   max-width: 700px;
-  top: 20%;
+  top: 15%;
   text-align: center;
   background-color: black;
   padding: 50px;
@@ -73,7 +73,7 @@
 input {
   border: 3px solid var(--gold-color);
   outline: none;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 12px;
   background-color: var(--black-color);
   width: 350px;
