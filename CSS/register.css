@@ -29,7 +29,7 @@
   border-radius: 10px;
   padding: 50px;
   color: var(--gold-color);
-  box-shadow: 4px #161918;
+  box-shadow: 4px solid #161918;
 }
  
 .login-form-banner {
