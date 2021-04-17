@@ -23,30 +23,47 @@
 .login-form-banner, .signup-form-banner {
   font-weight: 300;
   position: relative;
-  max-width: 700px;
-  text-align: center;
+  width: 440px;
+  max-width: 100%;
   background-color: black;
+  border-radius: 10px;
   padding: 50px;
   color: var(--gold-color);
+  box-shadow: 4px #161918;
 }
-
+ 
 .login-form-banner {
-  top: 20%;
+  top: 10%;
 }
 
 .signup-form-banner {
-  top: 12%;
+  top: 2%;
 }
 
 .reg-title {
-    font-size: 1.8rem;
-    line-height: 1.8;
+    font-size: 1.5rem;
+    line-height: 1.6;
     font-weight: 900;
+    padding: 10px 20px;
+}
+
+.register-logo {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  color: var(--gold-color);
+  margin-left: 40px;
+  font-weight: 900;
+  line-height: 1.6;
+}
+
+.register-logo:hover {
+  color: var(--white-color);
 }
 
 .forgot {
   color: var(--gold-color);
   font-size: 1.2rem;
+  width: 160px;
 }
 
 .forgot:hover {
@@ -77,14 +94,57 @@
     border-color: var(--white-color);
 }
 
-input {
+.form-control {
+  position: relative;
+  margin-bottom: 7px;
+  padding-bottom: 16px;
+}
+
+.form-control input {
+  display: block;
   border: 3px solid var(--gold-color);
   outline: none;
   border-radius: 15px;
   padding: 12px;
   background-color: var(--black-color);
-  width: 350px;
+  width: 320px;
   font-size: 1.2rem;
   color: var(--gold-color);
-  margin: 10px;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+}
+
+.form-control.success input {
+	border-color: chartreuse;
+}
+
+.form-control.error input {
+	border-color: red;
+}
+
+.form-control.success i.bx-check-double {
+  visibility: visible;
+  color: chartreuse;
+}
+
+.form-control.error i.bxs-error-circle {
+  visibility: visible;
+  color: red;
+}
+
+.form-control small {
+  position: absolute;
+  color: var(--gold-color);
+  visibility: hidden;
+  bottom: 0;
+  left: 0;
+}
+
+.form-control.error small {
+	visibility: visible;
 }

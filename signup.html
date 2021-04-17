@@ -13,44 +13,42 @@
     <title>MANTIME | SIGN UP</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <a href="/index.html" class="logo">MANTIME</a>
-        <ul>
-          <li>
-            <a href="index.html#about"><i class="bx bx-book-open bx-tada"></i> About</a>
-          </li>
-          <li>
-            <a href="index.html#contact"
-              ><i class="bx bxs-contact bx-tada"></i> Contact</a
-            >
-          </li>
-          <li>
-            <a href="#"><i class="bx bx-time bx-tada"></i> Timetable</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
     <section id="banner-container">
       <div class="bg-image">
         <div class="grid-container">
           <div class="signup-form-banner">
-            <h2 class="reg-title">SIGN UP</h2>
+            <div class="title-banner" style="display: flex;">
+              <h2 class="reg-title">SIGN UP</h2>
+                <a href="index.html#banner-container" class="register-logo" ">MANTIME</a>
+            </div>
             <div class="form">
-              <input type="name" name="name" placeholder="Name" /> <br />
-              <input type="email" name="email" placeholder="Email Address" />
-              <br />
-              <input type="password" name="password" placeholder="Password" />
-              <br />
-              <input
-                type="password"
-                name="confirm"
-                placeholder="Confirm Password"
-              />
-              <br />
+              <div class="form-control">
+                <input type="name" name="name" placeholder="Username" />
+                <i class='bx bx-check-double'></i>
+                <i class='bx bxs-error-circle' ></i>
+                <small>Username Already Taken</small>
+              </div>
+              <div class="form-control">
+                <input type="email" name="email" placeholder="Email Address" />
+                <i class='bx bx-check-double'></i>
+                <i class='bx bxs-error-circle' ></i>
+                <small>Error!</small>
+              </div>
+
+              <div class="form-control">
+                <input type="password" name="password" placeholder="Password" />
+                <i class='bx bx-check-double'></i>
+                <i class='bx bxs-error-circle'></i>
+                <small>Invalid Password</small>
+              </div>
+              <div class="form-control">
+                <input type="password" name="confirm" placeholder="Confirm Password"/>
+                <i class='bx bx-check-double'></i>
+                <i class='bx bxs-error-circle' ></i>
+                <small>Invalid Password</small>
+              </div>
               <a class="btn" href="#">Sign Up</a>
-              <p style="font-size: 1.3rem; line-height: 1.8">
+              <p style="font-size: 1.4rem; line-height: 1.8">
                 Or Sign Up with:
               </p>
               <div class="social-media">
