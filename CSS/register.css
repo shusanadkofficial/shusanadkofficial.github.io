@@ -134,7 +134,7 @@
 
 .form-control.error i.bxs-error-circle {
   visibility: visible;
-  color: red;
+  color:red;
 }
 
 .form-control small {
