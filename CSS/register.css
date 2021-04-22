@@ -15,6 +15,21 @@
   font-size: 16px;
 }
 
+section#login {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  background-color: #bdc3c7;
+}
+
+.reg-btn {
+  color: var(--black-color);
+}
+
+.reg-btn:hover {
+  color: var(--white-color);
+}
+
 .grid-container {
   display: grid;
   place-items: center;
@@ -22,7 +37,6 @@
 
 .login-form-banner, .signup-form-banner {
   font-weight: 300;
-  position: relative;
   width: 440px;
   max-width: 100%;
   background-color: black;
@@ -90,7 +104,7 @@
 
 .social-media ul li i.bx:hover {
     color: var(--white-color);
-    transform: rotate(36deg) scale(1.4);
+    transform: rotate(36deg) scale(1.3);
     border-color: var(--white-color);
 }
 
