@@ -90,6 +90,10 @@ section {
   display: flex;
 }
 
+.navbar .flex {
+  justify-content: space-between;
+}
+
 .logo,
 .navbar ul {
   margin: 0 50px;
@@ -105,7 +109,7 @@ section {
 
 .logo:hover {
   color: var(--white-color);
-}     
+}
 
 /* Banner and BG-Image CSS */
 
@@ -133,32 +137,42 @@ section {
 }
 
 .banner {
+  top: 120px;
   font-weight: 300;
   position: relative;
   text-align: center;
   padding: 50px;
+  margin: 50px;
   color: var(--gold-color);
 }
 
-.banner-title {
-  display: grid;
-  place-items: center;
-  margin-top: 200px;
-  line-height: 1.8;
+#banner-container .bannerH2 {
   font-size: 38px;
-  font-weight: 800;
+  color: aliceblue;
+  font-weight: 600 !important;
 }
-/* 
-.bg-image {
-  position: absolute;
-  top: 300px;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  font-size: 30px;
-  line-height: 1.8;
-} */
+
+#banner-container .bannerH1 {
+  font-size: 36px;
+  font-weight: 600 !important;
+  padding: 30px;
+  color: var(--gold-color);
+}
+
+.txt-type > .txt {
+  border-right: 0.3rem solid #f7ce38;
+  animation: blinkTextCursor 200ms steps(80) infinite normal;
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: var(--gold-color);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
 
 /* About CSS */
 
@@ -176,7 +190,7 @@ section {
 #content {
   color: var(--grey-color);
   text-align: center;
-  line-height:1.9;
+  line-height: 1.9;
   font-size: 1.3rem;
   width: 70%;
   margin: 0 auto;
@@ -201,13 +215,15 @@ section {
   background: var(--grey-color);
   height: 100vh;
   display: grid;
+  overflow: hidden;
+  top: 50px;
   place-items: center;
 }
 
-#phone,
-#location,
-#email,
-#hello {
+.contact-container #phone,
+.contact-container #location,
+.contact-container #email,
+.contact-container #hello {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -223,20 +239,20 @@ section {
   color: var(--grey-color) !important;
 }
 
-#email,
+.contact-container #email,
 #hello {
   background-color: var(--gold-color);
 }
 
 #location p,
 #phone a,
-#email a {
+.contact-container #email a {
   font-size: 1.5rem;
   letter-spacing: 1.2px;
   padding: 10px;
 }
 
-#email a {
+.contact-container #email a {
   color: var(--black-color);
 }
 
@@ -245,8 +261,8 @@ section {
   color: var(--grey-color);
 }
 
-#email .bannerH2,
-#email a,
+.contact-container #email .bannerH2,
+.contact-container #email a,
 #hello.bannerH2 {
   color: #000 !important;
 }
@@ -255,3 +271,50 @@ section {
   font-size: 1.4rem;
 }
 
+/* ****************Responsive CSS ********************* */
+
+/* Mobile Media Query */
+
+/* Typical Mobile Devices */
+@media only screen and (min-width: 250px) and (max-width: 399px) {
+  .navbar {
+    height: 120px;
+  }
+
+  .navbar ul li a {
+    font-size: 0.6rem;
+    padding: 0 3px;
+  }
+
+  .navbar ul li a:hover {
+    border: none;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .bannerH1 {
+    font-size: 1.2rem;
+  }
+
+  .bannerH2 {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    border: 0.4px solid #000;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    font-size: 0.7rem;
+    padding: 6px !important;
+  }
+
+  .navbar .flex {
+    justify-content: center;
+  }
+}
