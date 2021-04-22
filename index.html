@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <title>MANTIME | HOME</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <a href="#banner-container" class="logo">MANTIME</a>
-        <ul>
-          <li>
-            <a href="#about"><i class="bx bx-book-open bx-tada"></i> About</a>
-          </li>
-          <li>
-            <a href="#contact"
-              ><i class="bx bxs-contact bx-tada"></i> Contact</a
-            >
-          </li>
-          <li>
-            <a href="#"><i class="bx bx-time bx-tada"></i> Timetable</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    
-    <section id="banner-container">
-      <div class="bg-image">
-        <div class="banner">    
-          <h2 class="bannerH2">
-            Welcome to <span style="color: #f7ce3e;">Mantime</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <title>MANTIME | HOME</title>
+</head>
+
+<body>
+  <header>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <div class="container flex">
+        <h1>
+          <a href="index.html" class="logo">Mantime</a>
+        </h1>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="#about">
+                <i class='bx bxs-group bx-tada bx-rotate-90'></i>About
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <i class='bx bxs-contact bx-tada bx-rotate-90'></i>Contact
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class='bx bx-message-rounded-check bx-tada bx-rotate-90'></i>timetable
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a href="login.html" class="btn">
+          <i class='bx bx-log-in'></i>Log in
+        </a>
+      </div>
+    </div>
+
+    <!-- Banner -->
+
+    <section id="content-wrapper">
+      <div class="banner-container">
+        <h2 class="bannerH2">
+          Welcome to <span style="color: #f7ce3e;">Mantime</span>
         </h2>
         <h1 class="bannerH1">
-            <span class="txt-type" data-wait="2200" data-words='["Never be late again." ,"Manage your time with us."]'></span>
+          <span class="txt-type" datsa-wait="2200"
+            data-words='["Never be late again." ,"Manage your time with us."]'></span>
         </h1>
         <script src="JS/type.js"></script>
-          </h2>
-          <a class="btn" href="/login.html"><i class='bx bx-log-in bx-tada' ></i> Login</a>
-          <a class="btn" href="#about"><i class='bx bxs-book-reader bx-tada' ></i> learn more</a>
-        </div>
+
+        <a href="#about" class="btn">
+          <i class='bx bxs-book-reader'></i>Learn More
+        </a>
       </div>
     </section>
 
@@ -82,9 +97,7 @@
 
         <div id="phone">
           <h2 class="bannerH2">Phone:</h2>
-          <a href="tel:(+977)9819166224"
-            ><i class="bx bx-phone bx-tada"></i> 9819166224</a
-          >
+          <a href="tel:(+977)9819166224"><i class="bx bx-phone bx-tada"></i> 9819166224</a>
         </div>
 
         <div id="email">
@@ -107,5 +120,6 @@
         </div>
       </div>
     </section>
-  </body>
+</body>
+
 </html>
