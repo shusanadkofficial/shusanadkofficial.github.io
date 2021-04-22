@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/register.css" />
+    <script defer src="/JS/text.js"></script>
     <title>MANTIME | LOG IN</title>
   </head>
   <body>
@@ -21,18 +22,24 @@
               <h2 class="reg-title">LOG IN</h2>
                 <a href="index.html#banner-container" class="register-logo" ">MANTIME</a>
             </div>
-            <div class="form">
+            
+            <form class="form" id="form">
               <div class="form-control">
-                <input type="email" name="email" placeholder="Email Address" />
-                <i class='bx bxs-error-circle' ></i>
-                <small>Invalid Email</small>
+                <input type="email" placeholder="Email Address" id="email" />
+                <i class="bx bx-check-double"></i>
+                <i class="bx bxs-error-circle"></i>
+                <small>Error message</small>
               </div>
+
               <div class="form-control">
-                <input type="password" name="password" placeholder="Password" />
-                <i class='bx bxs-error-circle' ></i>
-                <small>Invalid Password</small>
+                <input type="password" placeholder="Password" id="password"/>
+                <i class="bx bx-check-double"></i>
+                <i class="bx bxs-error-circle"></i>
+                <small>Error message</small>
               </div>
-              <a class="btn" href="#">Log In</a>
+              <button class="btn">Log In</button>
+
+
               <p style="font-size: 1.3rem; line-height: 1.8">Or Log In with:</p>
               <div class="social-media">
                 <ul>
@@ -52,7 +59,7 @@
                   New to Mantime?<a class="btn" href="/signup.html">Sign Up</a>
                 </p>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>

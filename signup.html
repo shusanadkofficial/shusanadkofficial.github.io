@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/register.css" />
-    <script src="/JS/text.js"></script>
+    <script defer src="/JS/text.js"></script>
     <title>MANTIME | SIGN UP</title>
   </head>
   <body>
@@ -25,31 +25,30 @@
 
             <form id="form" class="form">
               <div class="form-control">
-                <input type="text" placeholder="Username" id="username"/>
-                <i class='bx bx-check-double'></i>
-                <i class='bx bxs-error-circle' ></i>
-                <small>Username Already Taken</small>
+                <input type="text" placeholder="Username" id="username" />
+                <i class="bx bx-check-double"></i>
+                <i class="bx bxs-error-circle"></i>
+                <small>Error message</small>
               </div>
               <div class="form-control">
                 <input type="email" placeholder="Email Address" id="email" />
-                <i class='bx bx-check-double'></i>
-                <i class='bx bxs-error-circle' ></i>
-                <small>Error! Must include '@'</small>
-              </div>
-
-              <div class="form-control">
-                <input type="password" placeholder="Password" id="password" />
-                <i class='bx bx-check-double'></i>
-                <i class='bx bxs-error-circle'></i>
-                <small>Invalid Password</small>
+                <i class="bx bx-check-double"></i>
+                <i class="bx bxs-error-circle"></i>
+                <small>Error message</small>
               </div>
               <div class="form-control">
-                <input type="password" name="confirm" placeholder="Confirm Password"  id="password2"/>
-                <i class='bx bx-check-double'></i>
-                <i class='bx bxs-error-circle' ></i>
-                <small>Invalid Password</small>
+                <input type="password" placeholder="Password" id="password"/>
+                <i class="bx bx-check-double"></i>
+                <i class="bx bxs-error-circle"></i>
+                <small>Error message</small>
               </div>
-              <button class="btn" type="submit">Sign Up</button>
+              <div class="form-control">
+                <input type="password" placeholder="Re-Enter Password" id="password2"/>
+                <i class="bx bx-check-double"></i>
+                <i class="bx bxs-error-circle"></i>
+                <small>Error message</small>
+              </div>
+              <button class="btn">Sign Up</button>
               <p style="font-size: 1.4rem; line-height: 1.8">
                 Or Sign Up with:
               </p>
