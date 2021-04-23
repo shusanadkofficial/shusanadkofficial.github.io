@@ -22,12 +22,26 @@ section#login {
   background-color: #bdc3c7;
 }
 
+#login button:hover{
+  color: var(--white-color);
+}
+
 .reg-btn {
-  color: var(--black-color);
+  display: inline-block;
+  padding: 10px 15px !important;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: var(--gold-color);
+  color: #000 !important;
+  border: 2px solid #000;
+  text-transform: uppercase;
+  border-radius: 50px;
 }
 
 .reg-btn:hover {
-  color: var(--white-color);
+  background-color: #000  !important;
+  color: var(--white-color) !important;
+  border: 2px solid var(--gold-color);
 }
 
 .grid-container {
