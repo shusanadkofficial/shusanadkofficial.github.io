@@ -136,7 +136,7 @@ section#content-wrapper {
 }
 
 .banner-container {
-  z-index: 1;
+  z-index: 999;
 }
 
 section#content-wrapper::before {
@@ -280,6 +280,32 @@ section#content-wrapper::before {
   font-size: 1.4rem;
 }
 
+/* Timetable CSS */
+
+#Timetable{
+  background: var(--gold-color);
+  height: 100vh;
+  display: grid;
+  overflow: hidden;
+  top: 50px;
+  place-items: center;
+}
+
+Timetable-container{
+  background-color: #42f5a7;
+}
+#timetable.btn
+{
+float: right;
+ width: 83%;
+ margin-right: 0px;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 12px;
+ height:625px;
+ overflow:auto;
+}
+
+
 /* ****************Responsive CSS ********************* */
 
 /* Mobile Media Query */
@@ -327,3 +353,4 @@ section#content-wrapper::before {
     justify-content: center;
   }
 }
+
