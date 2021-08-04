@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/timetable.css">
+    <title>Mantime | Timetable</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container flex">
+            <h1>
+                <a href="index.html" class="logo">Mantime</a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html#about">
+                            <i class='bx bxs-group bx-tada bx-rotate-90'></i>About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#contact">
+                            <i class='bx bxs-contact bx-tada bx-rotate-90'></i>Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="timetable.html">
+                            <i class='bx bx-message-rounded-check bx-tada bx-rotate-90'></i>timetable
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="login.html" class="btn">
+                <i class='bx bx-log-in'></i> Log in
+            </a>
+        </div>
+    </div>
+
+    <div class="tt-container">
+        <div class="layout">
+            <h2 id="title">Mantime Timetable</h2>
+
+            <form id="add-task">
+                <h2 class="new-task">Manage Your Task</h2>
+                <input autofocus type="text" class="task-input">
+                <span>Empty Field! Enter a task.</span>
+                <button type="submit" class="tt-btn add">Add Task</button>
+            </form>
+
+            <hr class="line">
+
+            <div id="task-list">
+                <h2 class="new-task">Task List</h2>
+                <ul class="collection">
+
+                </ul>
+                <button type="submit" class="tt-btn clear">Clear Task</button>
+            </div>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
