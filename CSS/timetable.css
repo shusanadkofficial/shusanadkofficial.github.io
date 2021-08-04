@@ -82,6 +82,13 @@ span {
     margin-bottom: 20px;
 }
 
+#display-date {
+    display: block;
+    position: relative;
+    left: 40%;
+    text-decoration: underline;
+}
+
 
 @media only screen 
     and (min-width: 250px) 

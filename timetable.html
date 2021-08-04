@@ -47,7 +47,7 @@
     <div class="tt-container">
         <div class="layout">
             <h2 id="title">Mantime Timetable</h2>
-
+            <h2 id="display-date"></h2>
             <form id="add-task">
                 <h2 class="new-task">Manage Your Task</h2>
                 <input autofocus type="text" class="task-input">
@@ -67,6 +67,11 @@
         </div>
     </div>
     <script src="JS/script.js"></script>
+    <script>
+        let dt = new Date();
+        let dd = document.querySelector('#display-date');
+        dd.innerHTML = dt.toLocaleDateString();
+    </script>
 </body>
 
 </html>
