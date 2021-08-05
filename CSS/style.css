@@ -271,6 +271,7 @@ section#content-wrapper::before {
 .contact-container #email a,
 #hello .bannerH2 {
   color: #000 !important;
+  font-weight: 700;
 }
 
 #hello .bannerH2 {
